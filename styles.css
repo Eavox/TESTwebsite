@@ -69,15 +69,16 @@ body, html {
 @media (max-width: 768px) {
     .image-wrapper {
         width: 90%;
+        margin-top: 20px; /* Adjusted margin to move the title up for mobile */
+    }
+
+    .button-container {
+        margin-top: 300px; /* Adjusted margin-top to move buttons lower for mobile */
     }
 
     .button {
         padding: 10px 20px;
         font-size: 14px;
-    }
-
-    .button-container {
-        margin-top: 40px;
     }
 }
 
