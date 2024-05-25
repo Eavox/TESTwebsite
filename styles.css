@@ -37,18 +37,17 @@ body, html {
 .button {
     text-decoration: none;
     color: #fff;
-    background: rgba(0, 0, 0, 0.7); /* Slightly transparent background for readability */
+    background: linear-gradient(45deg, #ff6b6b, #f8e71c); /* Gradient background */
     padding: 20px 40px;
     margin: 10px;
     border-radius: 10px;
     border: 2px solid #fff; /* Added border */
     transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
-    animation: buttonFadeIn 1s ease-in-out, float 3s infinite;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 .button:hover {
-    background: rgba(255, 255, 255, 0.3);
+    background: linear-gradient(45deg, #f8e71c, #ff6b6b);
     transform: scale(1.1);
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
 }
@@ -63,21 +62,7 @@ body, html {
     to { transform: translateY(0); opacity: 1; }
 }
 
-@keyframes buttonFadeIn {
-    from { opacity: 0; transform: scale(0.5); }
-    to { opacity: 1; transform: scale(1); }
-}
-
 @keyframes backgroundFade {
     from { opacity: 0; }
     to { opacity: 1; }
-}
-
-@keyframes float {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
 }
