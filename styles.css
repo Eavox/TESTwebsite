@@ -26,11 +26,12 @@ body, html {
     position: relative;
     width: 80%;
     max-width: 600px;
-    margin-bottom: 20px;
+    margin-bottom: 50px; /* Increased margin to move buttons lower */
 }
 
 .title-image {
     width: 100%;
+    max-width: 600px;
     height: auto;
     position: absolute;
     top: 0;
@@ -50,7 +51,7 @@ body, html {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: 100px; /* Increased margin-top to ensure buttons are not overlapped */
 }
 
 .button {
@@ -81,7 +82,7 @@ body, html {
     }
 
     .button-container {
-        margin-top: 20px;
+        margin-top: 40px;
     }
 }
 
