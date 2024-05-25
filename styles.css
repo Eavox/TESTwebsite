@@ -5,20 +5,21 @@ body, html {
     padding: 0;
     height: 100%;
     font-family: 'Bungee', cursive;
-    background: url('background.jpg') no-repeat center center fixed;
-    background-size: cover;
+    background: linear-gradient(270deg, #ff6b6b, #f8e71c, #50c9ce, #f8e71c);
+    background-size: 800% 800%;
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: backgroundFade 3s ease-in-out;
+    animation: backgroundFade 3s ease-in-out, gradientBackground 20s ease infinite;
 }
 
 .container {
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.0); /* Removed black background */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     padding: 30px;
     border-radius: 15px;
     animation: fadeIn 2s ease-in-out;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .title-image {
@@ -26,12 +27,14 @@ body, html {
     max-width: 600px;
     margin-bottom: 40px; /* Adjust margin to move buttons lower */
     animation: titleSlideIn 1s ease-out;
+    filter: drop-shadow(2px 4px 6px black);
 }
 
 .button-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
+    gap: 10px;
 }
 
 .button {
@@ -44,11 +47,13 @@ body, html {
     border: 2px solid #fff; /* Added border */
     transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
     animation: buttonFadeIn 1s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .button:hover {
     background: linear-gradient(45deg, #f8e71c, #ff6b6b);
     transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 @keyframes fadeIn {
@@ -69,4 +74,16 @@ body, html {
 @keyframes backgroundFade {
     from { opacity: 0; }
     to { opacity: 1; }
+}
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
