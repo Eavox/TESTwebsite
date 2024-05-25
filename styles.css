@@ -26,7 +26,6 @@ body, html {
     width: 80%;
     max-width: 600px;
     margin-bottom: 40px; /* Adjust margin to move buttons lower */
-    height: auto; /* Ensure the wrapper adjusts to the image height */
 }
 
 .title-image {
@@ -59,7 +58,7 @@ body, html {
     border-radius: 10px;
     border: 2px solid #fff; /* Added border */
     transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
-    animation: buttonFadeIn 1s ease-in-out, pulse 1.5s infinite;
+    animation: buttonFadeIn 1s ease-in-out;
 }
 
 .button:hover {
@@ -85,16 +84,4 @@ body, html {
 @keyframes backgroundFade {
     from { opacity: 0; }
     to { opacity: 1; }
-}
-
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-    40% { transform: translateY(-30px); }
-    60% { transform: translateY(-15px); }
-}
-
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
 }
