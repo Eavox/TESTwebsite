@@ -3,22 +3,22 @@ document.addEventListener('DOMContentLoaded', function() {
     const hoverImage = document.getElementById('hoverImage');
 
     titleImage.addEventListener('mouseover', function() {
-        titleImage.style.opacity = '0';
-        hoverImage.style.opacity = '1';
+        titleImage.classList.add('hidden');
+        hoverImage.classList.remove('hidden');
     });
 
     titleImage.addEventListener('mouseout', function() {
-        titleImage.style.opacity = '1';
-        hoverImage.style.opacity = '0';
+        titleImage.classList.remove('hidden');
+        hoverImage.classList.add('hidden');
     });
 
     hoverImage.addEventListener('mouseover', function() {
-        titleImage.style.opacity = '0';
-        hoverImage.style.opacity = '1';
+        titleImage.classList.add('hidden');
+        hoverImage.classList.remove('hidden');
     });
 
     hoverImage.addEventListener('mouseout', function() {
-        titleImage.style.opacity = '1';
-        hoverImage.style.opacity = '0';
+        titleImage.classList.remove('hidden');
+        hoverImage.classList.add('hidden');
     });
 });
