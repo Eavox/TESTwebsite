@@ -19,22 +19,23 @@ body, html {
     padding: 30px;
     border-radius: 15px;
     animation: fadeIn 2s ease-in-out;
-    position: relative;
 }
 
 .image-wrapper {
     position: relative;
-    width: 100%;
+    width: 80%;
     max-width: 600px;
     margin-bottom: 40px; /* Adjust margin to move buttons lower */
+    height: auto; /* Ensure the wrapper adjusts to the image height */
 }
 
 .title-image {
     width: 100%;
     position: absolute;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
+    right: 0;
+    margin: auto;
     transition: opacity 0.5s ease-in-out;
 }
 
