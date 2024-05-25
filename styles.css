@@ -44,13 +44,11 @@ body, html {
     border: 2px solid #fff; /* Added border */
     transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
     animation: buttonFadeIn 1s ease-in-out;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 .button:hover {
     background: linear-gradient(45deg, #f8e71c, #ff6b6b);
     transform: scale(1.1);
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
 }
 
 @keyframes fadeIn {
