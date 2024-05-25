@@ -8,6 +8,7 @@ body, html {
     background: url('background.jpg') no-repeat center center fixed;
     background-size: cover;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     animation: backgroundFade 3s ease-in-out;
@@ -26,7 +27,7 @@ body, html {
     width: 80%;
     max-width: 600px;
     height: auto;
-    margin-bottom: 40px; /* Adjust margin to move buttons lower */
+    margin-bottom: 60px; /* Increased margin to move buttons lower */
 }
 
 .title-image {
@@ -50,6 +51,7 @@ body, html {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 20px; /* Added margin-top for better spacing */
 }
 
 .button {
@@ -67,6 +69,21 @@ body, html {
 .button:hover {
     background: linear-gradient(45deg, #f8e71c, #ff6b6b);
     transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .title-image {
+        width: 90%;
+    }
+    
+    .button {
+        padding: 15px 30px;
+        font-size: 14px;
+    }
+    
+    .button-container {
+        margin-top: 40px;
+    }
 }
 
 @keyframes fadeIn {
