@@ -8,7 +8,7 @@ body, html {
     background: linear-gradient(270deg, #ff6b6b, #f8e71c, #50c9ce, #f8e71c);
     background-size: 800% 800%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     animation: backgroundFade 3s ease-in-out, gradientBackground 20s ease infinite;
 }
@@ -20,6 +20,7 @@ body, html {
     border-radius: 15px;
     animation: fadeIn 2s ease-in-out;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
 }
 
 .title-image {
@@ -35,6 +36,7 @@ body, html {
     justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
+    margin-bottom: 20px;
 }
 
 .button {
@@ -86,4 +88,95 @@ body, html {
     100% {
         background-position: 0% 50%;
     }
+}
+
+.newsletter-form {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 250px;
+    max-width: 80%;
+}
+
+.newsletter-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #ff6b6b, #f8e71c);
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.newsletter-form button:hover {
+    background: linear-gradient(45deg, #f8e71c, #ff6b6b);
+    transform: scale(1.05);
+}
+
+.latest-news {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: left;
+    width: 80%;
+    max-width: 800px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.latest-news h2 {
+    margin-top: 0;
+}
+
+.contact-form {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: left;
+    width: 80%;
+    max-width: 800px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #ff6b6b, #f8e71c);
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.contact-form button:hover {
+    background: linear-gradient(45deg, #f8e71c, #ff6b6b);
+    transform: scale(1.05);
 }
