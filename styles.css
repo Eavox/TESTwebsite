@@ -26,16 +26,13 @@ body, html {
     position: relative;
     width: 80%;
     max-width: 600px;
-    height: auto;
-    margin-bottom: 100px; /* Increased margin to move buttons lower */
+    margin-bottom: 20px; /* Adjust margin to move buttons lower */
 }
 
 .title-image {
     width: 100%;
     max-width: 600px;
     height: auto;
-    position: relative; /* Changed to relative */
-    margin: 0 auto;
     transition: opacity 0.5s ease-in-out;
 }
 
@@ -48,13 +45,14 @@ body, html {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .button {
     text-decoration: none;
     color: #fff;
     background: linear-gradient(45deg, #ff6b6b, #f8e71c);
-    padding: 20px 40px;
+    padding: 15px 30px;
     margin: 10px;
     border-radius: 10px;
     border: 2px solid #fff;
@@ -73,12 +71,12 @@ body, html {
     }
     
     .button {
-        padding: 15px 30px;
+        padding: 10px 20px;
         font-size: 14px;
     }
     
     .button-container {
-        margin-top: 40px;
+        margin-top: 20px;
     }
 }
 
