@@ -23,14 +23,13 @@ body, html {
 
 .image-wrapper {
     position: relative;
-    width: 80%;
-    max-width: 600px;
-    margin-top: 50px;
+    width: 60%; /* Reduced the size of the title */
+    max-width: 400px; /* Adjusted max width */
+    margin-top: 30px; /* Adjusted margin to move the title up */
 }
 
 .title-image {
     width: 100%;
-    max-width: 600px;
     height: auto;
     position: absolute;
     top: 0;
@@ -46,8 +45,8 @@ body, html {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 100px; /* Ensure buttons are below the title */
     margin-bottom: 50px;
-    margin-top: auto;
 }
 
 .button {
