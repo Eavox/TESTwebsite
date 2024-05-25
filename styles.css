@@ -16,7 +16,7 @@ body, html {
 
 .container {
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.0); /* Removed black background */
+    background-color: rgba(0, 0, 0, 0.0);
     padding: 30px;
     border-radius: 15px;
     animation: fadeIn 2s ease-in-out;
@@ -27,18 +27,15 @@ body, html {
     width: 80%;
     max-width: 600px;
     height: auto;
-    margin-bottom: 60px; /* Increased margin to move buttons lower */
+    margin-bottom: 100px; /* Increased margin to move buttons lower */
 }
 
 .title-image {
     width: 100%;
-    max-width: 600px; /* Ensure image does not exceed container width */
+    max-width: 600px;
     height: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
+    position: relative; /* Changed to relative */
+    margin: 0 auto;
     transition: opacity 0.5s ease-in-out;
 }
 
@@ -51,17 +48,16 @@ body, html {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 20px; /* Added margin-top for better spacing */
 }
 
 .button {
     text-decoration: none;
     color: #fff;
-    background: linear-gradient(45deg, #ff6b6b, #f8e71c); /* Gradient background */
+    background: linear-gradient(45deg, #ff6b6b, #f8e71c);
     padding: 20px 40px;
     margin: 10px;
     border-radius: 10px;
-    border: 2px solid #fff; /* Added border */
+    border: 2px solid #fff;
     transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
     animation: buttonFadeIn 1s ease-in-out;
 }
