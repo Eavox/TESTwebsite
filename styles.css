@@ -43,6 +43,7 @@ body, html {
     border-radius: 10px;
     border: 2px solid #fff; /* Added border */
     transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    animation: buttonFadeIn 1s ease-in-out;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
@@ -60,6 +61,11 @@ body, html {
 @keyframes titleSlideIn {
     from { transform: translateY(-50px); opacity: 0; }
     to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes buttonFadeIn {
+    from { opacity: 0; transform: scale(0.5); }
+    to { opacity: 1; transform: scale(1); }
 }
 
 @keyframes backgroundFade {
