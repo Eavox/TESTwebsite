@@ -109,7 +109,7 @@ header {
     padding: 50px;
     border-radius: 10px;
     text-align: center;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
     color: #fff;
 }
 
@@ -210,7 +210,8 @@ header {
 
 .content-section h2 {
     font-size: 2em; /* Increased font size */
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    -webkit-text-stroke: 0.3px white;
 }
 
 .content-section p {
@@ -324,6 +325,7 @@ button[type="submit"]:hover {
     background: -webkit-linear-gradient(45deg, #f8e71c, #ff6b6b);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.3px white;
 }
 
 @keyframes fadeIn {
