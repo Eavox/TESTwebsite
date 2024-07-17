@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diesel Family Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="ethlogo.svg" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="image-wrapper">
+                <img src="HUB.svg" alt="Diesel Family Hub Title" class="title-image" id="titleImage" loading="lazy">
+                <img src="weed.svg" alt="Weed Logo" class="title-image hidden" id="hoverImage" loading="lazy">
+            </div>
+        </header>
+        <nav class="button-container">
+            <a href="https://twitch.tv/Eavox_" class="button">Twitch</a>
+            <a href="#" class="button" id="scheduleButton">Schedule</a>
+            <a href="https://discord.com/invite/eavox" class="button">Discord</a>
+            <a href="https://eavox-shop.fourthwall.com/" class="button">Diesel Shop</a>
+            <a href="https://twitter.com/EavoxETH" class="button">Twitter</a>
+        </nav>
+        <main>
+            <section class="video-widget" id="latestVideo">
+                <h2 class="gradient-text">24H STREAM</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/KURA4Qwc4dY?si=8bT3K3_FhMKLL8XF" frameborder="0" allowfullscreen loading="lazy"></iframe>
+                <div class="video-links">
+                    <a href="https://www.youtube.com/channel/UCPviTnFrRZtQwNSyFbzVWZQ" class="button">YouTube</a>
+                    <a href="https://www.tiktok.com/@eavox_" class="button">TikTok</a>
+                </div>
+            </section>
+            <section class="exchange-section content-section">
+                <h2 class="gradient-text">Exchange</h2>
+                <p>Trade <span class="blue-highlight">without KYC</span> and get direct support on Discord. Enjoy <span class="blue-highlight">exclusive access</span> to our <span class="blue-highlight">VIP team</span>!</p>
+                <div class="exchange-links">
+                    <div class="exchange-item">
+                        <a href="https://partner.blofin.com/d/Eavox" class="button">BloFin</a>
+                        <p class="exchange-description">Up to <span class="blue-highlight">$5000</span> in bonus and more!</p>
+                    </div>
+                    <div class="exchange-item">
+                        <a href="https://hub.eavox.eth.limo/" class="button">BYDFi</a>
+                        <p class="exchange-description">Exclusive <span class="blue-highlight">0% fee</span> for the Diesel Family!</p>
+                    </div>
+                </div>
+            </section>
+            <section class="content-section">
+                <h2 class="gradient-text">Community Spotlight</h2>
+                <p>Welcome to the <span class="blue-highlight">Diesel Family Hub</span>! Stay tuned for exciting updates and community news. Check out our latest <span class="blue-highlight">stream schedule</span> and join the conversation on <span class="blue-highlight">Discord</span>.</p>
+                <div class="community-buttons">
+                    <a href="mailto:eavoxtrading@gmail.com" class="button" id="contactButton">Contact Me</a>
+                    <button class="button" id="suggestionButton">Suggestion</button>
+                </div>
+            </section>
+        </main>
+        <!-- Schedule Modal -->
+        <div id="scheduleModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button" id="closeModal">&times;</span>
+                <img src="2ee57419ae1b2bad73fb4b857191a03d1cb56fb27a839e78d90567b5ba358268.png" alt="Weekly Stream Schedule" class="schedule-image" loading="lazy">
+                <a href="https://www.twitch.tv/eavox_/schedule" class="button">View on Twitch</a>
+            </div>
+        </div>
+        <!-- Suggestion Modal -->
+        <div id="suggestionModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button" id="closeSuggestionModal">&times;</span>
+                <h2>Submit a Suggestion</h2>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd3ssDqycQ3NF-Y8IzPCPAPSUIjJValtzB92aQV72MaKafAzA/viewform?embedded=true" width="450" height="480" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+        </div>
+        <div class="empty-section"></div>
+    </div>
+    <script src="scripts.js" defer></script>
+</body>
+</html>
